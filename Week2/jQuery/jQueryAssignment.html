@@ -1,0 +1,32 @@
+<html>
+<head>
+	<title>"jQuery Assignment"</title>
+	<style>
+		#fieldset{ 
+				background-color: Pink;
+			 }
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+					{ $("#FirstField").keyup(function()
+								{ $("#SecondField").val(this.value.length) 
+								}
+							      );
+					}
+				  );
+	</script>
+</head>
+<body>
+<h1>"jQuery Assignment"</h1>
+<h3>When key is pressed then in 2nd text field its shows the count of total hits of key press.</h3>
+	<form>
+		<fieldset id="fieldset">
+			Press the key in box :
+			<input type="text" id="FirstField">
+			Count :
+			<input type="text" id="SecondField">
+		</fieldset>
+	</form>	
+</body>
+</html>
